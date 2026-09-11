@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>外卖新菜单经营日报｜2026-09-09</title>
+  <title>外卖新菜单经营日报｜2026-09-10</title>
   <style>
     :root { --ink:#172b4d; --muted:#64748b; --bg:#f3f6f9; --card:#fff; --line:#dfe7ef; --blue:#315d8a; --orange:#dd873c; --pos:#cf3237; --neg:#148262; }
     * { box-sizing:border-box; }
@@ -27,7 +27,7 @@
     .section-title { display:flex; align-items:center; gap:11px; font-size:29px; margin:0 0 13px; font-weight:900; }
     .index { padding:5px 9px; border-radius:6px; background:var(--blue); color:#fff; font-size:17px; }
     .summary-rule { margin:0 0 14px; padding:12px 16px; border:1px solid #d9e5ee; border-radius:9px; background:#f8fafc; color:#42566f; font-size:15px; line-height:1.65; font-weight:700; }
-    .overview-grid { display:grid; grid-template-columns:repeat(5,minmax(0,1fr)); gap:14px; }
+    .overview-grid { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:14px; }
     .overview-card,.summary-card,.metric-block,.good,.bad { background:var(--card); border:1px solid var(--line); border-radius:11px; }
     .overview-card { padding:15px; border-top:4px solid var(--blue); box-shadow:0 1px 2px #172b4d0a; }
     .overview-card h3 { margin:0 0 2px; font-size:20px; }
@@ -100,13 +100,13 @@
           <button id="download-html" class="action-btn" type="button">下载 HTML</button>
           <button id="download-image" class="action-btn" type="button">下载图片</button>
         </div>
-        <div class="date"><strong>9月9日</strong>2026年｜仅看外卖</div>
+        <div class="date"><strong>9月10日</strong>2026年｜仅看外卖</div>
       </div>
     </header>
 
     <section class="summary-main">
-      <p>总体：杯量 <b>14.72万杯</b>，日环比 <span class="pos">+6.04%</span>，周同比 <span class="pos">+6.57%</span>，VS8月 <span class="neg">-3.92%</span>。</p>
-      <p>总体收益：杯均实收 <b>7.52元</b>（日 <span class="neg">-0.02%</span>、周 <span class="neg">-1.56%</span>、VS8月 <span class="neg">-0.58元</span>）。</p>
+      <p>总体：杯量 <b>14.39万杯</b>，日环比 <span class="pos">+0.91%</span>，周同比 <span class="pos">+8.63%</span>，VS8月 <span class="neg">-6.01%</span>。</p>
+      <p>总体收益：杯均实收 <b>7.49元</b>（日 <span class="neg">-0.16%</span>、周 <span class="neg">-2.05%</span>、VS8月 <span class="neg">-0.61元</span>）。</p>
     </section>
 
     <section class="section">
@@ -236,6 +236,110 @@
       }
     };
 
+    Object.assign(REPORT_DATA, {
+      overview: [
+        {name:"总体",note:"全量，包括未切换",cups:"14.39万杯",cupN:143900,day:"+0.91%",week:"+8.63%",vs:"-6.01%",active:"21.01杯",activeDay:"+0.50%",activeWeek:"+7.87%",stores:"6849家",storesDay:"+0.41%",storesWeek:"+0.71%",receipt:"7.49元",receiptDay:"-0.16%",receiptWeek:"-2.05%",receiptVs:"-0.61元"},
+        {name:"A菜单",note:"",cups:"4.362万杯",cupN:43620,day:"-0.63%",week:"+11.42%",vs:"-10.61%",active:"15.89杯",activeDay:"-0.41%",activeWeek:"+11.25%",stores:"2745家",storesDay:"-0.22%",storesWeek:"+0.15%",receipt:"7.54元",receiptDay:"-0.92%",receiptWeek:"-2.68%",receiptVs:"-0.64元"},
+        {name:"B菜单",note:"",cups:"1.532万杯",cupN:15320,day:"+5.95%",week:"+9.60%",vs:"-1.10%",active:"13.85杯",activeDay:"+5.47%",activeWeek:"+8.31%",stores:"1106家",storesDay:"+0.45%",storesWeek:"+1.19%",receipt:"7.61元",receiptDay:"+0.44%",receiptWeek:"-1.67%",receiptVs:"-0.51元"},
+        {name:"C菜单",note:"",cups:"7.404万杯",cupN:74040,day:"+0.18%",week:"+7.32%",vs:"-3.20%",active:"32.66杯",activeDay:"-0.61%",activeWeek:"+6.61%",stores:"2267家",storesDay:"+0.80%",storesWeek:"+0.67%",receipt:"7.28元",receiptDay:"+0.01%",receiptWeek:"-1.95%",receiptVs:"-0.62元"}
+      ],
+      channelData: [
+        {name:"饿了么",metrics:[
+          {key:"cups",label:"杯量",type:"pct",vs:true,rows:[
+            ["总体",["6.105万杯",61050,"+2.04%","+15.82%","+7.03%"],["3.283万杯",32830,"+4.79%","+25.82%","+6.01%"]],
+            ["A菜单",["1.779万杯",17790,"+0.35%","+24.76%","-1.28%"],["1.058万杯",10580,"+1.78%","+34.79%","+8.62%"]],
+            ["B菜单",["6590杯",6590,"+5.78%","+21.77%","+15.90%"],["3749杯",3749,"+5.84%","+41.63%","+23.69%"]],
+            ["C菜单",["2.238万杯",22380,"+1.40%","+10.11%","-23.17%"],["1.585万杯",15850,"+5.86%","+30.14%","-3.35%"]]
+          ]},
+          {key:"receipt",label:"杯均实收",type:"amt",vs:true,rows:[
+            ["总体",["7.55元",7.55,"+0.39%","+0.36%","-0.31元"],["7.99元",7.99,"+0.59%","+0.50%","+0.39元"]],
+            ["A菜单",["7.76元",7.76,"-0.29%","-0.83%","-0.21元"],["7.87元",7.87,"+0.20%","+0.20%","+0.34元"]],
+            ["B菜单",["7.69元",7.69,"+0.50%","+0.27%","-0.24元"],["8.02元",8.02,"+0.58%","-0.46%","+0.21元"]],
+            ["C菜单",["7.25元",7.25,"+0.65%","+0.51%","-0.38元"],["7.86元",7.86,"+0.76%","+0.54%","+0.49元"]]
+          ]}
+        ]},
+        {name:"美团",metrics:[
+          {key:"cups",label:"杯量",type:"pct",vs:true,rows:[
+            ["总体",["4.844万杯",48440,"-0.51%","-3.70%","-22.15%"],["1.474万杯",14740,"-0.30%","-18.35%","-36.77%"]],
+            ["A菜单",["1.5067万杯",15067,"-1.84%","-5.66%","-25.78%"],["4917杯",4917,"-5.68%","-17.05%","-36.09%"]],
+            ["B菜单",["4925杯",4925,"+2.56%","-8.76%","-24.37%"],["1615杯",1615,"+3.78%","-19.64%","-39.08%"]],
+            ["C菜单",["2.5047万杯",25047,"-0.92%","-1.23%","-18.97%"],["6841杯",6841,"-4.22%","-18.62%","-38.15%"]]
+          ]},
+          {key:"receipt",label:"杯均实收",type:"amt",vs:true,rows:[
+            ["总体",["7.24元",7.24,"-0.21%","-1.88%","-0.80元"],["8.21元",8.21,"+1.01%","+0.66%","-0.43元"]],
+            ["A菜单",["7.26元",7.26,"-1.40%","-1.61%","-0.87元"],["7.95元",7.95,"+0.77%","+0.91%","-0.55元"]],
+            ["B菜单",["7.32元",7.32,"+0.53%","-0.44%","-0.65元"],["8.05元",8.05,"+3.78%","+1.67%","-0.34元"]],
+            ["C菜单",["7.05元",7.05,"+0.23%","-2.16%","-0.77元"],["8.04元",8.04,"-0.28%","-0.15%","-0.38元"]]
+          ]}
+        ]},
+        {name:"京东",metrics:[
+          {key:"cups",label:"杯量",type:"pct",vs:true,rows:[
+            ["总体",["3.444万杯",34440,"+0.94%","+16.82%","+1.83%"],["6209杯",6209,"+7.86%","+16.61%","-28.39%"]],
+            ["A菜单",["1.0878万杯",10878,"-0.51%","+20.64%","+3.70%"],["2626杯",2626,"+6.12%","+16.96%","-2.88%"]],
+            ["B菜单",["3801杯",3801,"+11.01%","+20.09%","+15.39%"],["864.2杯",864.2,"+15.86%","+22.78%","0.00%"]],
+            ["C菜单",["1.6627万杯",16627,"-0.48%","+16.58%","+1.14%"],["3544杯",3544,"+6.24%","+13.91%","-13.46%"]]
+          ]},
+          {key:"receipt",label:"杯均实收",type:"amt",vs:true,rows:[
+            ["总体",["7.78元",7.78,"-1.11%","-7.07%","-0.82元"],["8.56元",8.56,"-1.59%","-0.85%","-0.74元"]],
+            ["A菜单",["7.57元",7.57,"-1.43%","-8.65%","-1.05元"],["8.71元",8.71,"-1.68%","-1.31%","-0.61元"]],
+            ["B菜单",["7.84元",7.84,"-0.08%","-7.88%","-0.91元"],["9.04元",9.04,"+2.84%","-1.76%","-0.44元"]],
+            ["C菜单",["7.69元",7.69,"-1.44%","-6.87%","-0.85元"],["8.16元",8.16,"-1.92%","-0.72%","-1.07元"]]
+          ]}
+        ]}
+      ],
+      regionData: [
+        {name:"3.0门店",volume:[
+          ["总体","1.075万杯",10750,"+4.77%","+0.58%","-6.93%"],["C菜单","5706杯",5706,"+6.69%","+11.77%","-1.54%"],["未切换","5046杯",5046,"+2.69%","-0.08%","-12.35%"]
+        ],receipt:[
+          ["总体","7.96元",7.96,"+0.84%","-0.54%","-0.40元"],["C菜单","7.26元",7.26,"+0.61%","+0.23%","-0.20元"],["未切换","8.76元",8.76,"+1.41%","+1.13%","-0.51元"]
+        ]},
+        {name:"华东",volume:[
+          ["总体","2.595万杯",25950,"+3.16%","+6.18%","-4.31%"],["A菜单","4437杯",4437,"+2.16%","+5.59%","-1.51%"],["B菜单","2943杯",2943,"+4.07%","+13.02%","+12.24%"],["C菜单","1.41万杯",14100,"+2.67%","+4.20%","-0.21%"]
+        ],receipt:[
+          ["总体","7.77元",7.77,"-0.80%","-1.52%","-0.66元"],["A菜单","7.78元",7.78,"-2.39%","-2.66%","-0.78元"],["B菜单","7.70元",7.70,"-1.96%","-1.88%","-0.55元"],["C菜单","7.55元",7.55,"-0.33%","-1.53%","-0.67元"]
+        ]},
+        {name:"华北",volume:[
+          ["总体","2.277万杯",22770,"+11.27%","+0.78%","-7.55%"],["A菜单","6141杯",6141,"+11.17%","+6.65%","-16.90%"],["B菜单","5579杯",5579,"+10.91%","+10.89%","-0.25%"],["C菜单","1.059万杯",10590,"+11.14%","+1.75%","-7.43%"]
+        ],receipt:[
+          ["总体","7.40元",7.40,"-0.61%","-1.11%","-0.49元"],["A菜单","7.39元",7.39,"-2.99%","-3.62%","-0.56元"],["B菜单","7.46元",7.46,"+1.36%","-1.15%","-0.34元"],["C菜单","7.36元",7.36,"-0.22%","-1.81%","-0.49元"]
+        ]},
+        {name:"华南",volume:[
+          ["总体","4.043万杯",40430,"-4.46%","+17.40%","-1.99%"],["A菜单","1.719万杯",17190,"-4.87%","+16.51%","-8.22%"],["B菜单","869杯",869,"-1.81%","+26.49%","+15.94%"],["C菜单","2.216万杯",22160,"-4.17%","+17.68%","+2.40%"]
+        ],receipt:[
+          ["总体","7.23元",7.23,"-0.07%","-2.14%","-0.65元"],["A菜单","7.39元",7.39,"-1.19%","-2.83%","-0.67元"],["B菜单","8.04元",8.04,"+4.68%","+1.15%","-0.22元"],["C菜单","7.07元",7.07,"+0.60%","-1.77%","-0.64元"]
+        ]},
+        {name:"江苏",volume:[
+          ["总体","1.187万杯",11870,"+1.34%","-1.87%","-2.06%"],["A菜单","3438杯",3438,"+6.11%","+13.05%","+0.97%"],["B菜单","1222杯",1222,"-0.89%","+10.19%","-4.68%"],["C菜单","6814杯",6814,"-1.50%","+2.59%","-5.19%"]
+        ],receipt:[
+          ["总体","7.64元",7.64,"-0.35%","-3.16%","-0.76元"],["A菜单","7.89元",7.89,"+0.38%","-1.33%","-0.62元"],["B菜单","7.57元",7.57,"+2.67%","-0.46%","-0.59元"],["C菜单","7.50元",7.50,"-1.26%","-2.64%","-0.91元"]
+        ]},
+        {name:"西部",volume:[
+          ["总体","1.997万杯",19970,"-4.06%","-1.53%","-13.36%"],["A菜单","5814杯",5814,"-3.71%","-3.21%","-19.70%"],["B菜单","4351杯",4351,"-4.82%","+1.80%","-10.23%"],["C菜单","9405杯",9405,"-8.19%","-1.75%","-12.35%"]
+        ],receipt:[
+          ["总体","7.43元",7.43,"+0.03%","-3.12%","-0.60元"],["A菜单","7.59元",7.59,"+0.41%","-3.25%","-0.60元"],["B菜单","7.67元",7.67,"-0.30%","-2.94%","-0.61元"],["C菜单","7.23元",7.23,"-0.22%","-3.10%","-0.58元"]
+        ]},
+        {name:"闽赣",volume:[
+          ["总体","1.237万杯",12370,"-2.85%","+22.82%","-7.27%"],["A菜单","6608杯",6608,"-1.21%","+22.48%","-7.59%"],["B菜单","352杯",352,"-6.99%","+30.37%","-11.60%"],["C菜单","5266杯",5266,"-5.11%","+20.59%","-2.26%"]
+        ],receipt:[
+          ["总体","7.42元",7.42,"-0.26%","-1.49%","-0.69元"],["A菜单","7.67元",7.67,"+0.42%","-1.30%","-0.63元"],["B菜单","7.32元",7.32,"-1.03%","-6.25%","-0.61元"],["C菜单","7.15元",7.15,"-0.62%","-1.58%","-0.71元"]
+        ]}
+      ],
+      channelSummaries: {
+        "饿了么": {overall:"杯量日环比 +2.04%、周同比 +15.82%、VS8月 +7.03%。",main:"主站杯量日环比 +4.79%、周同比 +25.82%、VS8月 +6.01%。",menus:"A菜单日 +0.35%、周 +24.76%、VS8月 -1.28%；B菜单日 +5.78%、周 +21.77%、VS8月 +15.90%；C菜单日 +1.40%、周 +10.11%、VS8月 -23.17%。"},
+        "美团": {overall:"杯量日环比 -0.51%、周同比 -3.70%、VS8月 -22.15%。",main:"主站杯量日环比 -0.30%、周同比 -18.35%、VS8月 -36.77%。",menus:"A菜单日 -1.84%、周 -5.66%、VS8月 -25.78%；B菜单日 +2.56%、周 -8.76%、VS8月 -24.37%；C菜单日 -0.92%、周 -1.23%、VS8月 -18.97%。"},
+        "京东": {overall:"杯量日环比 +0.94%、周同比 +16.82%、VS8月 +1.83%。",main:"主站杯量日环比 +7.86%、周同比 +16.61%、VS8月 -28.39%。",menus:"A菜单日 -0.51%、周 +20.64%、VS8月 +3.70%；B菜单日 +11.01%、周 +20.09%、VS8月 +15.39%；C菜单日 -0.48%、周 +16.58%、VS8月 +1.14%。"}
+      },
+      regionSummaries: {
+        "3.0门店": {overallLabel:"3.0整体：",detailLabel:"区域内类型：",overall:"杯量日环比 +4.77%、周同比 +0.58%、VS8月 -6.93%。",menus:"C菜单日 +6.69%、周 +11.77%、VS8月 -1.54%；未切换日 +2.69%、周 -0.08%、VS8月 -12.35%。"},
+        "华东": {overall:"杯量日环比 +3.16%、周同比 +6.18%、VS8月 -4.31%。",menus:"A菜单日 +2.16%、周 +5.59%、VS8月 -1.51%；B菜单日 +4.07%、周 +13.02%、VS8月 +12.24%；C菜单日 +2.67%、周 +4.20%、VS8月 -0.21%。"},
+        "华北": {overall:"杯量日环比 +11.27%、周同比 +0.78%、VS8月 -7.55%。",menus:"A菜单日 +11.17%、周 +6.65%、VS8月 -16.90%；B菜单日 +10.91%、周 +10.89%、VS8月 -0.25%；C菜单日 +11.14%、周 +1.75%、VS8月 -7.43%。"},
+        "华南": {overall:"杯量日环比 -4.46%、周同比 +17.40%、VS8月 -1.99%。",menus:"A菜单日 -4.87%、周 +16.51%、VS8月 -8.22%；B菜单日 -1.81%、周 +26.49%、VS8月 +15.94%；C菜单日 -4.17%、周 +17.68%、VS8月 +2.40%。"},
+        "江苏": {overall:"杯量日环比 +1.34%、周同比 -1.87%、VS8月 -2.06%。",menus:"A菜单日 +6.11%、周 +13.05%、VS8月 +0.97%；B菜单日 -0.89%、周 +10.19%、VS8月 -4.68%；C菜单日 -1.50%、周 +2.59%、VS8月 -5.19%。"},
+        "西部": {overall:"杯量日环比 -4.06%、周同比 -1.53%、VS8月 -13.36%。",menus:"A菜单日 -3.71%、周 -3.21%、VS8月 -19.70%；B菜单日 -4.82%、周 +1.80%、VS8月 -10.23%；C菜单日 -8.19%、周 -1.75%、VS8月 -12.35%。"},
+        "闽赣": {overall:"杯量日环比 -2.85%、周同比 +22.82%、VS8月 -7.27%。",menus:"A菜单日 -1.21%、周 +22.48%、VS8月 -7.59%；B菜单日 -6.99%、周 +30.37%、VS8月 -11.60%；C菜单日 -5.11%、周 +20.59%、VS8月 -2.26%。"}
+      }
+    });
+
     const esc = function(s) { return String(s).replace(/[&<>]/g, function(m) { return ({'&':'&amp;','<':'&lt;','>':'&gt;'})[m]; }); };
     const sign = function(s) { s = String(s); return s.charAt(0) === '+' ? 1 : (s.charAt(0) === '-' ? -1 : 0); };
     const change = function(s) { const n = sign(s); return '<span class="change ' + (n > 0 ? 'pos' : (n < 0 ? 'neg' : '')) + '">' + esc(s) + '</span>'; };
@@ -257,16 +361,19 @@
         '<div class="metric-line"><strong>杯均实收 ' + esc(x.receipt) + '</strong>日 ' + change(x.receiptDay) + '　周 ' + change(x.receiptWeek) + '　VS8月 ' + change(x.receiptVs) + '</div></article>';
     }
     function summaryCard(name, item, isRegion) {
-      const labels = isRegion ? ['大区整体：','下钻 A/B/C：'] : ['整体：','下钻 A/B/C：'];
-      return '<article class="summary-card' + (isRegion ? ' region-card' : '') + '"><h3>' + esc(name) + '</h3>' +
-        '<p><b>' + labels[0] + '</b>' + colorize(item.overall) + '</p>' +
-        '<p><b>' + labels[1] + '</b>' + colorize(item.menus) + '</p></article>';
+      const overallLabel = item.overallLabel || (isRegion ? '大区整体：' : '整体：');
+      const detailLabel = item.detailLabel || '下钻 A/B/C：';
+      let h = '<article class="summary-card' + (isRegion ? ' region-card' : '') + '"><h3>' + esc(name) + '</h3>' +
+        '<p><b>' + overallLabel + '</b>' + colorize(item.overall) + '</p>';
+      if (item.main) h += '<p><b>主站：</b>' + colorize(item.main) + '</p>';
+      if (item.menus) h += '<p><b>' + detailLabel + '</b>' + colorize(item.menus) + '</p>';
+      return h + '</article>';
     }
     function channelTable(metric) {
       const max = Math.max.apply(null, metric.rows.reduce(function(a, r) { return a.concat([r[1][1], r[2][1]]); }, []));
       let h = '<div class="metric-block"><div class="metric-header">' + esc(metric.label) + '</div><table><colgroup>' +
         '<col style="width:15%"><col style="width:12%"><col style="width:25%"><col style="width:16%"><col style="width:16%">' +
-        (metric.vs ? '<col style="width:16%">' : '') + '</colgroup><thead><tr><th>菜单</th><th>口径</th><th>数值</th><th>日环比</th><th>周同比</th>' +
+        (metric.vs ? '<col style="width:16%">' : '') + '</colgroup><thead><tr><th>类型</th><th>口径</th><th>数值</th><th>日环比</th><th>周同比</th>' +
         (metric.vs ? '<th>VS8月</th>' : '') + '</tr></thead><tbody>';
       metric.rows.forEach(function(row) {
         const menu = row[0], total = row[1], main = row[2];
@@ -281,10 +388,10 @@
       const cols = hasVs
         ? '<col style="width:14%"><col style="width:14%"><col style="width:28%"><col style="width:14%"><col style="width:15%"><col style="width:15%">'
         : '<col style="width:15%"><col style="width:15%"><col style="width:30%"><col style="width:20%"><col style="width:20%">';
-      let h = '<div class="region-metric metric-block region-table"><div class="metric-header">' + esc(label) + '</div><table><colgroup>' + cols + '</colgroup><thead><tr><th>大区</th><th>菜单</th><th>数值</th><th>日环比</th><th>周同比</th>' + (hasVs ? '<th>VS8月</th>' : '') + '</tr></thead><tbody>';
+      let h = '<div class="region-metric metric-block region-table"><div class="metric-header">' + esc(label) + '</div><table><colgroup>' + cols + '</colgroup><thead><tr><th>大区</th><th>类型</th><th>数值</th><th>日环比</th><th>周同比</th>' + (hasVs ? '<th>VS8月</th>' : '') + '</tr></thead><tbody>';
       REPORT_DATA.regionData.forEach(function(r) {
         r[key].forEach(function(v, i) {
-          h += '<tr class="' + (i === 0 ? 'pair-start' : '') + '">' + (i === 0 ? '<td rowspan="4" class="region">' + esc(r.name) + '</td>' : '') +
+          h += '<tr class="' + (i === 0 ? 'pair-start' : '') + '">' + (i === 0 ? '<td rowspan="' + r[key].length + '" class="region">' + esc(r.name) + '</td>' : '') +
             '<td class="menu">' + esc(v[0]) + '</td><td class="value">' + esc(v[1]) + bar(v[2], max, false) + '</td><td>' + change(v[3]) + '</td><td>' + change(v[4]) + '</td>' + (hasVs ? '<td>' + change(v[5]) + '</td>' : '') + '</tr>';
         });
       });
@@ -293,7 +400,7 @@
     document.getElementById('overview').innerHTML = REPORT_DATA.overview.map(overviewCard).join('');
     document.getElementById('channel-summary').innerHTML = REPORT_DATA.channelData.map(function(c) { return summaryCard(c.name, REPORT_DATA.channelSummaries[c.name], false); }).join('');
     document.getElementById('channel-details').innerHTML = REPORT_DATA.channelData.map(function(c) {
-      return '<section class="detail-channel"><div class="detail-heading"><h3>' + esc(c.name) + '</h3><span>先看整体，再看分菜单与主站</span></div>' + c.metrics.map(channelTable).join('') + '</section>';
+      return '<section class="detail-channel"><div class="detail-heading"><h3>' + esc(c.name) + '</h3><span>先看整体与主站，再看 A/B/C 菜单</span></div>' + c.metrics.map(channelTable).join('') + '</section>';
     }).join('');
     document.getElementById('region-summary-cards').innerHTML = REPORT_DATA.regionData.map(function(r) { return summaryCard(r.name, REPORT_DATA.regionSummaries[r.name], true); }).join('');
     document.getElementById('region-details').innerHTML = regionTable('volume','杯量',true) + regionTable('receipt','杯均实收',true);
@@ -311,7 +418,7 @@
 
     function downloadHtml() {
       var content = '<!doctype html>\n' + document.documentElement.outerHTML;
-      saveBlob(new Blob([content], {type:'text/html;charset=utf-8'}), '外卖新菜单经营日报_2026-09-09.html');
+      saveBlob(new Blob([content], {type:'text/html;charset=utf-8'}), '外卖新菜单经营日报_2026-09-10.html');
     }
 
     function pageStyleText() {
@@ -355,7 +462,7 @@
                 button.textContent = originalText;
                 return;
               }
-              saveBlob(blob, '外卖新菜单经营日报_2026-09-09.png');
+              saveBlob(blob, '外卖新菜单经营日报_2026-09-10.png');
               button.disabled = false;
               button.textContent = originalText;
             }, 'image/png');
@@ -363,7 +470,7 @@
             var dataUrl = canvas.toDataURL('image/png');
             var link = document.createElement('a');
             link.href = dataUrl;
-            link.download = '外卖新菜单经营日报_2026-09-09.png';
+            link.download = '外卖新菜单经营日报_2026-09-10.png';
             link.click();
             button.disabled = false;
             button.textContent = originalText;
